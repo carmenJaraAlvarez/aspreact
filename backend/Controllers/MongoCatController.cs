@@ -38,7 +38,7 @@ namespace backend.Controllers
             else
             {
                 
-                await db.UpdateMongoCat(mcat);  
+                await db.InsertMongoCat(mcat);  
                 return Created("Created", true);
             }
         }
@@ -53,7 +53,7 @@ namespace backend.Controllers
             else
             {
                 mcat.Id = new ObjectId(id);
-                await db.InsertMongoCat(mcat);
+                await db.UpdateMongoCat(mcat);
                 return Created("Created", true);
             }
         }
