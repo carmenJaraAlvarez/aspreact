@@ -1,0 +1,48 @@
+use Cats
+db.dropDatabase()
+use Cats
+db.createCollection('Cats')
+db.Cats.insert(	[
+		{
+			"Url": "https://cdn2.thecatapi.com/images/1iMVA2qZ-.jpg",
+			"Width": 1800,
+			"Height": 1800
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/1i2.jpg",
+			"Width": 375,
+			"Height": 500
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/b7e.jpg",
+			"Width": 500,
+			"Height": 334
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/dn0.jpg",
+			"Width": 480,
+			"Height": 640
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/H18SpU-Yc.jpg",
+			"Width": 1280,
+			"Height": 960
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/7d6.png",
+			"Width": 500,
+			"Height": 334
+		},
+			{
+
+			"Url": "https://cdn2.thecatapi.com/images/c4v.jpg",
+			"Width": 893,
+			"Height": 566
+		}
+	]
+)
